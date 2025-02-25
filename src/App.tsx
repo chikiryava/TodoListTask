@@ -32,7 +32,7 @@ export const App: React.FC = observer(() => {
     return (
         <div className="min-h-screen bg-gray-200 flex items-center justify-center">
             <div className="bg-white rounded-lg shadow-lg p-8 w-full max-w-2xl">
-                <h1 className="text-3xl font-bold text-center mb-6">Task Tree</h1>
+                <h1 className="text-3xl font-bold text-center mb-6">Список задач</h1>
                 <div className="flex mb-4">
                     <input
                         type="text"
