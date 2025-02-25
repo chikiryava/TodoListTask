@@ -1,50 +1,63 @@
-# React + TypeScript + Vite
+# 🌳 Task Tree App  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Простое приложение для управления древовидной структурой задач. Позволяет добавлять, отмечать и управлять задачами с подзадачами.  
 
-Currently, two official plugins are available:
+## 🚀 Демо  
+🔗 **[Посмотреть приложение](https://your-project-name.vercel.app/)**  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠 Технологии  
+- ⚛ **React + TypeScript** – компонентный подход и строгая типизация  
+- 🎭 **MobX** – удобное управление состоянием  
+- 🎨 **Tailwind CSS** – стилизация и адаптивность  
+- ⚡ **Vite** – быстрая сборка и разработка  
 
-## Expanding the ESLint configuration
+## 📌 Функционал  
+✔ Добавление задач и подзадач  
+✔ Древовидная структура с отступами  
+✔ Чекбоксы для управления выполнением  
+✔ Автоматическое выделение родительских задач  
+✔ Сохранение состояния задач  
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 📷 Скриншоты  
+<img src="https://via.placeholder.com/800x400.png?text=Screenshot+1" width="600" alt="Скриншот 1">  
+<img src="https://via.placeholder.com/800x400.png?text=Screenshot+2" width="600" alt="Скриншот 2">  
 
-- Configure the top-level `parserOptions` property like this:
+## 📦 Установка и запуск  
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### 🔧 1. Установка зависимостей  
+```sh
+npm install
+▶️ 2. Запуск проекта
+sh
+Копировать
+Редактировать
+npm run dev
+Откройте http://localhost:5173 в браузере.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+⚙️ 3. Сборка для продакшена
+sh
+Копировать
+Редактировать
+npm run build
+📂 Структура проекта
+bash
+Копировать
+Редактировать
+/src  
+ ├── components/      # UI-компоненты  
+ ├── store/           # MobX-хранилище  
+ ├── styles/          # Tailwind стили  
+ ├── App.tsx          # Основной компонент  
+ ├── main.tsx         # Точка входа  
+ ├── vite.config.ts   # Конфигурация Vite  
+🎯 TODO / Возможные улучшения
+☑ Сохранение задач в LocalStorage
+☑ Анимация при открытии подзадач
+☑ Поддержка drag-and-drop
+📝 Автор
+💡 Ваше Имя
+📧 Email: your.email@example.com
+🐙 GitHub: your-github
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+🔗 Исходный код на GitHub
+🚀 Демо на Vercel
